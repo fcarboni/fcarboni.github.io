@@ -1,0 +1,194 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*****************************************/
+/*FORCE LA VISUALISATION EN MODE PORTRAIT*/
+/*****************************************/
+
+#fondAvertissement{
+	background-color: lightred;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#avertissement{
+	display: none;
+	justify-content: center;
+	margin-top: 40%;
+	margin-left: 20%;
+	margin-right: 20%;
+	align-items: center;
+	text-align: center;
+	border: 3px solid black;
+	font-size: 5vw;
+	background-color: lightgrey;
+	border-radius: 15px;
+}
+
+ @media only screen and (orientation:portrait){
+#conteneur{
+	display: none;
+}
+#avertissement{
+	display: block;
+}
+#fondAvertissement{
+	display: block;
+}
+}
+ @media only screen and (orientation:landscape){
+#avertissement{
+	display: none;
+}
+#fondAvertissement{
+	display: none;
+}
+}
+
+/*******/
+/*INTRO*/
+/*******/
+
+.fondAccueil{
+	background-image: url("../res/imgFond.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	filter: blur(7px);
+	transition: all 0.5s;
+}
+
+.etiquette{
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	width: 20%;
+	text-align: justify;
+	background-color: rgba(96,50,8,0.4);
+	border: 1px solid black;
+	padding: 1%;
+	opacity: 0;
+	transition: opacity 1.5s, background-color 0.5s;
+}
+
+.etiquette:hover{
+	background-color: rgba(219,160,105,1);
+	color: ;
+	border: 1px solid black;
+}
+
+.tiroir{
+	width: 45%;
+	height: 100%;
+	z-index: 10;
+	background-color: black;
+	filter: none;
+	position: fixed;
+	top: 0;
+	left:0;
+	transition: all 0.5s;
+}
+
+.tiroir:after{
+    content: " ";
+    position: absolute;
+    width:20px;
+    height: 100%;
+    top: 0px;
+    right: -20px;
+    box-shadow: 20px 0px 10px -10px black inset;
+}
+
+.txtTiroir{
+	color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 15%;
+	height: 60%;
+	border: 1px solid white;
+}
+
+.txtTiroir h1{
+	text-align: center;
+	font-size: 2vw;
+}
+
+.txtTiroir p{
+	text-align: justify;
+	font-size: 1vw;
+}
+
+.btnSuite{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border: 1px solid #AC0A00;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 5%;
+	width:30%;
+	font-size: 1.2vw;
+	border-radius: 10px;
+	transition: all 0.4s;
+}
+
+.btnSuite:hover{
+	border: 1px solid #BF0D02;
+	color: black;
+	background-color: #EA0E00;
+}
+
+.btnTiroir{
+	position: absolute;
+	right: 1%;
+	top: 48%;
+	height: 8%;
+	width: 5%;
+	background-image: url("../res/fleche_gauche.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+.navbar-brand {
+    font-family: "Lobster";
+    color: var(--primary) !important;
+    font-weight: bold;
+    font-size: 32px;
+}
+.navbar-brand:hover {
+    color: rgba(0, 76, 255) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+} 
+
+.active .nav-link {
+    color: var(--primary) !important;
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../res/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
