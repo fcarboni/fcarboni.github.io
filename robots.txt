@@ -1,3 +1,5 @@
 #Groupe
 User-agent: *
 Allow: /
+#
+Sitemap: https://fcarboni.github.io/sitemap.xml
