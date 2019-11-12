@@ -13,3 +13,9 @@ function closeTiroir() {
     document.getElementById("fondAccueil").style.filter = "none";
 	document.getElementById("etiquette").style.opacity = "1";
 }
+
+$(document).ready(function() {
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+});

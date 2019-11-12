@@ -8,6 +8,11 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+/* Changement curseur "Aide" */
+.cursor-help {
+	cursor: help;
+}
+
 /*****************************************/
 /*FORCE LA VISUALISATION EN MODE PORTRAIT*/
 /*****************************************/
